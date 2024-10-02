@@ -1,0 +1,9 @@
+<div class="container container--narrow">
+  <header class="page__header page__header--centered">
+    <h1 class="page__title heading h1">{{ page.title }}</h1>
+  </header>
+
+  <div class="page__content rte">
+    {{ page.content | replace: '<img', '<img loading="lazy"' | replace: '<iframe', '<iframe loading="lazy"' | replace: '<video', '<video preload="none"' }}
+  </div>
+</div>
